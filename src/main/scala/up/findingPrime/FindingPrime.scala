@@ -2,7 +2,7 @@ package up.findingPrime
 
 object FindingPrime {
   def factorial(number: Int): Int = {
-    (1 to number).reduce(_ *_)
+    (1 to number).product
   }
 
   def isPrime(number: Int): Boolean = {
@@ -10,7 +10,7 @@ object FindingPrime {
   }
 
   def findPrime(fromNumber: Int, toNumber: Int): Seq[Int]={
-    (fromNumber to toNumber).filter{isPrime(_)}
+    (fromNumber to toNumber).filter{isPrime}
   }
 
   def main(): Unit = {
