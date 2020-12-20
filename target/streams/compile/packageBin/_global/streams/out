@@ -1,1 +1,11 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /Users/up/Desktop/scala/Algorithm/UpAlgorithm/target/scala-2.13/practice_2.13-0.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/up/Desktop/scala/Algorithm/UpAlgorithm/target/scala-2.13/practice_2.13-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	up[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/up/Desktop/scala/Algorithm/UpAlgorithm/target/scala-2.13/classes/up[0m
+[0m[[0m[0mdebug[0m] [0m[0m	up/first[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/up/Desktop/scala/Algorithm/UpAlgorithm/target/scala-2.13/classes/up/first[0m
+[0m[[0m[0mdebug[0m] [0m[0m	up/first/HelloWorld.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/up/Desktop/scala/Algorithm/UpAlgorithm/target/scala-2.13/classes/up/first/HelloWorld.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	up/first/HelloWorld$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/up/Desktop/scala/Algorithm/UpAlgorithm/target/scala-2.13/classes/up/first/HelloWorld$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
