@@ -4,7 +4,7 @@ import scala.annotation.tailrec
 
 object SelectionSort {
 
-  implicit class SequenceUtil(numbers: Seq[Int]) {
+  implicit class SequenceUtil(val numbers: Seq[Int]) {
     def swapElement(index1: Int, index2: Int): Seq[Int] = {
       val headIndex = 0
       val tailIndex = numbers.size - 1
@@ -23,10 +23,11 @@ object SelectionSort {
           )) :+ numbers.head) ++ numbers.slice(index2 + 1, numbers.size)
         }
       } else {
-        (((numbers.slice(0, index1) :+ numbers(index2)) ++ numbers.slice(
-          index1 + 1,
-          index2
-        )) :+ numbers(index1)) ++ numbers.slice(index2 + 1, numbers.size)
+        (((numbers.slice(headIndex, index1) :+ numbers(index2)) ++ numbers
+          .slice(
+            index1 + 1,
+            index2
+          )) :+ numbers(index1)) ++ numbers.slice(index2 + 1, numbers.size)
       }
     }
 
