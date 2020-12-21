@@ -1,14 +1,14 @@
 package up.selectionSort
 
 import org.scalatest.FunSuite
-import up.selectionSort.SelectionSort.{SequenceUtil, selectionSort}
+import up.selectionSort.SelectionSort.{selectionSort, swapElement}
 
 class SelectionSortSuite extends FunSuite {
   test("SwapElement switch first and last element correctly") {
     val numbers = Seq(1, 2, 3, 4, 5, 6, 7)
     val index1 = 0
     val index2 = numbers.size - 1
-    val newNumbers = numbers.swapElement(index1, index2)
+    val newNumbers = swapElement(numbers, index1, index2)
     assert(newNumbers === Seq(7, 2, 3, 4, 5, 6, 1))
   }
   test("SwapElement switch tail and other element after head correctly") {
@@ -16,7 +16,7 @@ class SelectionSortSuite extends FunSuite {
 
     val index1 = 2
     val index2 = numbers.size - 1
-    val newNumbers = numbers.swapElement(index1, index2)
+    val newNumbers = swapElement(numbers, index1, index2)
 
     assert(newNumbers === Seq(1, 2, 7, 4, 5, 6, 3))
   }
@@ -25,7 +25,7 @@ class SelectionSortSuite extends FunSuite {
 
     val index1 = numbers.size - 2
     val index2 = numbers.size - 1
-    val newNumbers = numbers.swapElement(index1, index2)
+    val newNumbers = swapElement(numbers, index1, index2)
 
     assert(newNumbers === Seq(1, 2, 3, 4, 5, 7, 6))
   }
@@ -36,7 +36,7 @@ class SelectionSortSuite extends FunSuite {
 
     val index1 = 0
     val index2 = 4
-    val newNumbers = numbers.swapElement(index1, index2)
+    val newNumbers = swapElement(numbers, index1, index2)
 
     assert(newNumbers === Seq(5, 2, 3, 4, 1, 6, 7))
   }
@@ -45,7 +45,7 @@ class SelectionSortSuite extends FunSuite {
 
     val index1 = 0
     val index2 = 1
-    val newNumbers = numbers.swapElement(index1, index2)
+    val newNumbers = swapElement(numbers, index1, index2)
 
     assert(newNumbers === Seq(2, 1, 3, 4, 5, 6, 7))
   }
@@ -54,7 +54,7 @@ class SelectionSortSuite extends FunSuite {
 
     val index1 = 2
     val index2 = 4
-    val newNumbers = numbers.swapElement(index1, index2)
+    val newNumbers = swapElement(numbers, index1, index2)
 
     assert(newNumbers === Seq(1, 2, 5, 4, 3, 6, 7))
   }
@@ -65,15 +65,25 @@ class SelectionSortSuite extends FunSuite {
 
     val index1 = 3
     val index2 = 4
-    val newNumbers = numbers.swapElement(index1, index2)
+    val newNumbers = swapElement(numbers, index1, index2)
 
     assert(newNumbers === Seq(1, 2, 3, 5, 4, 6, 7))
   }
 
-  test("selectSort sort correctly") {
-    val numbers: Seq[Int] = Seq(1, 2, 3, 5, 4, 6, 7)
-    println(numbers.mkString(", "))
+  test("selectSort return the same sequence if data is ascending sorted") {
+    val numbers: Seq[Int] = Seq(1, 2, 3, 4, 5, 6, 7)
+
     val result = selectionSort(numbers)
-    println(result.mkString(", "))
+
+    assert(result === numbers)
+  }
+
+  test("selectSort sort correctly") {
+    val numbers: Seq[Int] =
+      Seq(1, 2, 3, 5, 4, 6, 7).sorted(Ordering.Int.reverse)
+
+    val result = selectionSort(numbers)
+
+    assert(result === numbers.sorted)
   }
 }

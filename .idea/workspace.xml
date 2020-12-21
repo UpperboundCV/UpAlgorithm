@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95fd1a5f-231d-497f-90c2-bd832da07d77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/up/selectionSort/SelectionSortSuite.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/up/selectionSort/SelectionSortSuite.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,20 +95,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSortSuite.SwapElement switch first and last element correctly" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="practice" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="testKind" value="Test name" />
-      <option name="testClassPath" value="up.selectionSort.SelectionSortSuite" />
-      <option name="testName" value="SwapElement switch first and last element correctly" />
-      <option name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SelectionSortSuite.SwapElement switch tail and adjacent one correctly" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="practice" />
       <option name="allowRunningInParallel" value="false" />
@@ -137,6 +123,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SelectionSortSuite.selectSort return the same sequence if data is ascending sorted" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="practice" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="up.selectionSort.SelectionSortSuite" />
+      <option name="testName" value="selectSort return the same sequence if data is ascending sorted" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SelectionSortSuite.selectSort sort correctly" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="practice" />
       <option name="allowRunningInParallel" value="false" />
@@ -155,17 +155,17 @@
       <item itemvalue="sbt Task.usingSbt" />
       <item itemvalue="ScalaTest.SelectionSortSuite.SwapElement switch tail and adjacent one correctly" />
       <item itemvalue="ScalaTest.SelectionSortSuite" />
-      <item itemvalue="ScalaTest.SelectionSortSuite.SwapElement switch first and last element correctly" />
       <item itemvalue="ScalaTest.SelectionSortSuite.SwapElement switch tail and other element after head correctly" />
       <item itemvalue="ScalaTest.SelectionSortSuite.selectSort sort correctly" />
+      <item itemvalue="ScalaTest.SelectionSortSuite.selectSort return the same sequence if data is ascending sorted" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="ScalaTest.SelectionSortSuite.selectSort sort correctly" />
         <item itemvalue="ScalaTest.SelectionSortSuite" />
+        <item itemvalue="ScalaTest.SelectionSortSuite.selectSort return the same sequence if data is ascending sorted" />
         <item itemvalue="ScalaTest.SelectionSortSuite.SwapElement switch tail and adjacent one correctly" />
         <item itemvalue="ScalaTest.SelectionSortSuite.SwapElement switch tail and other element after head correctly" />
-        <item itemvalue="ScalaTest.SelectionSortSuite.SwapElement switch first and last element correctly" />
       </list>
     </recent_temporary>
   </component>
@@ -194,5 +194,101 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>60</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>58</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>57</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>56</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>55</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>53</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>52</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>51</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>50</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>49</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>48</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>47</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>46</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>45</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>44</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>54</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/up/selectionSort/SelectionSort.scala</url>
+          <line>43</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
